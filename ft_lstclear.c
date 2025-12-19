@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 21:02:32 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/17 21:03:14 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/18 15:38:37 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,14 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	
+	t_list	*temp;
+
+	if (!lst || !del)
+		return ;
+	while (*lst)
+	{
+		temp = (*lst)-> next;
+		ft_lstdelone(*lst, del);
+		*lst = temp;
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 13:28:05 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/16 19:12:22 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/18 16:01:52 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ void	ft_putstr_fd(char *s, int fd)
 //		printf("Errore nell'apertura del file!\n");
 //      return (1);
 //   }
-// 	ft_putstr_fd("3. Se leggi questo, la tua funzione ha scritto nel file!\n", mio_fd);
+// 	ft_putstr_fd("3.the function wrote on the file\n", mio_fd);
 //     close(mio_fd);
-//     printf("\nTest 3 completato. Controlla se esiste il file 'prova.txt' nella cartella!\n");
+//     printf("\nTest 3 completato. file 'prova.txt' nella cartella!\n");
 //     return (0);
 // }

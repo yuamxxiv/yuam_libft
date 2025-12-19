@@ -6,13 +6,11 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 10:58:45 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/16 13:27:18 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/17 22:15:32 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h> //open
-#include <sys/stat.h> //permessi
 
 void	ft_putchar_fd(char c, int fd)
 {

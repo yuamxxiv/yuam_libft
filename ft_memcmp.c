@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/02 12:18:38 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 19:41:39 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/19 23:50:20 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		m2++;
 		n--;
 	}
-	return (*m1 - *m2);
+	return (0);
 }
 
 /*int	main()

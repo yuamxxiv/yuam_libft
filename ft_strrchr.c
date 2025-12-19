@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 14:01:20 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 19:42:44 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/19 23:56:22 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i--;
 	}
-	if (s[i] == '\0')
-		return ((char *)&s[i]);
 	return (NULL);
 }
 

@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 16:15:24 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 22:11:16 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/18 13:44:38 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	i = 0;
 	j = 0;
-	while (i < len1)
+	while (i < ft_strlen(s1))
 	{
 		ns[i] = s1[i];
 		i++;
 	}
-	while (j < len2)
+	while (j < ft_strlen(s2))
 	{
 		ns[i + j] = s2[j];
 		j++;
