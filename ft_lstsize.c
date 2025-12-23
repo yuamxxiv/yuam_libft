@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 19:51:09 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/18 14:02:10 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:38:14 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (lst)
-    {
-        lst = lst -> next;
-        i++;
-    }
-    return (i);
+	i = 0;
+	while (lst)
+	{
+		lst = lst -> next;
+		i++;
+	}
+	return (i);
 }

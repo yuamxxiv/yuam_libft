@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 23:29:43 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 19:42:22 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 20:00:02 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	src_len;
 	size_t	dst_len;
 
+	if (!dst || !src)
+		return (0);
 	dst_len = 0;
 	while (dst[dst_len] != '\0' && dst_len < size)
 		dst_len++;

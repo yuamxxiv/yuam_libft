@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/02 16:45:26 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/15 11:33:05 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 20:35:46 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_atoi(const char *nptr)
 	int	sign;
 	int	n;
 
+	if (!nptr)
+		return (0);
 	sign = 1;
 	n = 0;
 	while (*nptr == ' ' || (*nptr >= 9 && *nptr <= 13))

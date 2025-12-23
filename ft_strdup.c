@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 12:27:27 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 19:42:15 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:46:04 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strdup(const char *s)
 	size_t	len;
 	char	*copy;
 
+	if (!s)
+		return (NULL);
 	len = ft_strlen(s);
 	copy = (char *) malloc (sizeof(char) * (len +1));
 	if (copy == NULL)

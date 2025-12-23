@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 16:29:27 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/18 13:53:35 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:52:44 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	ft_putint( char *str, long nb, int len)
 	if (nb == 0)
 	{
 		str[0] = '0';
-		str[1] = '\0';
+		return ;
 	}
 	if (nb < 0)
 	{

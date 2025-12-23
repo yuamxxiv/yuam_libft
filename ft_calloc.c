@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 12:27:07 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 19:40:58 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:54:01 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t			i;
 
 	total_size = nmemb * size;
-	if (nmemb != '\0' && total_size / nmemb != size)
+	if (nmemb != 0 && total_size / nmemb != size)
 		return (NULL);
 	ptr = malloc(total_size);
 	if (ptr == NULL)

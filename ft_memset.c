@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 16:59:23 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 19:41:57 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:48:41 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memset(void *s, int c, size_t n)
 	unsigned char	*d;
 	unsigned char	f;
 
+	if (!s)
+		return (NULL);
 	d = s;
 	f = c;
 	while (n > 0)

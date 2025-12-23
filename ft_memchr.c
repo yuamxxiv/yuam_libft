@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 18:30:30 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 19:41:34 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:47:46 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	*t;
 	unsigned char	d;
 
+	if (!s)
+		return (NULL);
 	t = (unsigned char *)s;
 	d = (unsigned char)c;
 	while (n > 0)

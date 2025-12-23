@@ -6,7 +6,7 @@
 /*   By: amancheg <amancheg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 11:15:38 by amancheg          #+#    #+#             */
-/*   Updated: 2025/12/12 19:40:54 by amancheg         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:56:24 by amancheg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@ void	ft_bzero(void *ptr, size_t num)
 {
 	unsigned char	*b;
 
+	if (!ptr)
+		return ;
 	b = ptr;
 	while (num > 0)
 	{
-		*b = '\0';
+		*b = 0;
 		b++;
 		num--;
 	}
